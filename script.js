@@ -30,7 +30,7 @@ function reset() {
   startScore = 20;
   score.textContent = startScore;
   target = Math.trunc(Math.random() * 20) + 1;
-  targetDisplay.textContent = target;
+  targetDisplay.textContent = '?';
   displayMessage.textContent = 'Start Guessing ..';
   document.querySelector('body').style.backgroundColor = 'black';
   document.querySelector('.number').style.width = '15rem';
@@ -43,7 +43,6 @@ let score = document.querySelector('.score');
 let highScore = document.querySelector('.highscore');
 let displayMessage = document.querySelector('.message');
 let targetDisplay = document.querySelector('.number');
-targetDisplay.textContent = target;
 let input = document.querySelector('.guess');
 let button = document.querySelector('.check');
 let button2 = document.querySelector('.again');
